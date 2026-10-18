@@ -1,0 +1,31 @@
+{
+  "name": "rate-limit-example",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/index.ts",
+    "start": "tsx --env-file=.env src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "unblock": "tsx --env-file=.env src/unblock.ts"
+  },
+  "dependencies": {
+    "@chat-adapter/state-ioredis": "^4.42.0",
+    "@hono/node-server": "^2.1.5",
+    "@zernio/chat-sdk-adapter": "^0.5.1",
+    "@zernio/node": "^0.2.1216",
+    "ai": "^7.0.143",
+    "chat": "^4.42.0",
+    "hono": "^4.13.13",
+    "ioredis": "^5.11.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
